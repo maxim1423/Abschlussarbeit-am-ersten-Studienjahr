@@ -105,10 +105,12 @@ void main()
 	
 	//Емуляція розриву ребра
 	cout << endl;
-	cout << "Select two vertices to break an edge between them:";
+	cout << "Select two vertices to break a connection between them(numbers of stations from the previous list)"<< endl;
 	int first_vertex;
-	int second_vertex;
+	cout << "1 vertix:" << endl;
 	cin >> first_vertex;
+	int second_vertex;
+	cout << "2 vertix:" << endl;
 	cin >> second_vertex;
 	map.removeTwodirectionEdge(first_vertex, second_vertex);
 
